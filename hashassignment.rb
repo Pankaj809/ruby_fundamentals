@@ -12,8 +12,9 @@ user_data[:name3]=gets.chomp
 puts "Enter fourth name: "
 user_data[:name4]=gets.chomp
 
+user_data=user_data.transform_values(&:downcase) 
+
 value_counts = user_data.values.tally
 puts "Number of times each value is repeated:"
 
 value_counts.each {| value, count | puts "#{value}: #{count}" }
-

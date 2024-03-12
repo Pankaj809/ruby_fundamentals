@@ -31,3 +31,4 @@ countries={
         }
 }
  puts  "#{countries["Nepal"]["Population"]}"
+ puts"#{countries["India"]}"

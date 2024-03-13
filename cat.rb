@@ -30,10 +30,28 @@ class Cat
     def self.count
         puts"Number of cats object : #{@@count}"
     end
+
+    def say_human_age
+        if @age==1
+            human_years=15
+        elsif @age==2
+            human_years=24
+        else
+            human_years=24+(@age-2)*4
+        end
+        puts "I'm #{@age} years old in cat years and #{human_years} years old in human years"
+
+    end
 end
 
-cat=Cat.new("labish", 3)
-beth=Cat.new("beth", 4)
+
+cat1=Cat.new("labish", 3)
+cat2=Cat.new("beth", 4)
+cat3=Cat.new("cathy", 5)
+
+cat1.say_human_age
+cat2.say_human_age
+cat3.say_human_age
 
 
 cat.meow
